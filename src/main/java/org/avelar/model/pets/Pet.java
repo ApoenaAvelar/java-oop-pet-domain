@@ -5,6 +5,6 @@ public interface Pet {
     public void play(int minutesToPlay);
     public void eat(String food, int weight);
     public void doPetShopping(PetShopServices service);
-    public void getPetInfo();
+
 
 }

@@ -13,9 +13,5 @@ public class Dog extends PetBase{
         System.out.printf("The dog %s barked", this.getName());
     }
 
-    @Override
-    public void getPetInfo() {
-        System.out.println("It's a dog.");
-        super.getPetInfo();
-    }
+
 }

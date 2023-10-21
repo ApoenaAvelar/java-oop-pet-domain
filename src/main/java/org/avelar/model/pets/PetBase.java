@@ -2,6 +2,7 @@ package org.avelar.model.pets;
 
 public class PetBase implements Pet{
 
+    private String petkind = this.getClass().getName();
     private String name;
     private String weigh;
     private String registerId;
@@ -75,12 +76,16 @@ public class PetBase implements Pet{
     }
 
     @Override
-    public void getPetInfo(){
-        System.out.printf("Register: %s",this.getRegisterId());
-        System.out.printf("Breed: %s",this.getRace());
-        System.out.printf("Name: %s", this.getName());
-        System.out.printf("Weigh: %s",this.getWeigh());
+    public String toString() {
+        return petkind +
+                "name='" + name + '\'' +
+                ", weigh='" + weigh + '\'' +
+                ", registerId='" + registerId + '\'' +
+                ", race='" + race + '\'' +
+                '}';
     }
+
+
 }
 
 
