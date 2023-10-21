@@ -1,5 +1,5 @@
-package org.avelar.model.pets;
+package org.avelar.model.petShop;
 
 public enum PetShopServices {
-    NONE, PET_CLINIC, PET_FOOD, PET_SALON, PEST_CONTROL
+    NONE, CLINIC, FOOD, SALON, HOTEL
 }

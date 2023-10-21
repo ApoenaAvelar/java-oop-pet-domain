@@ -1,5 +1,6 @@
 package org.avelar.model.people;
 
+import org.avelar.model.petShop.PetShopServices;
 import org.avelar.model.pets.PetBase;
 
 public class Tutor extends People{
@@ -16,6 +17,12 @@ public class Tutor extends People{
 
     public String getPetInfo(){
         return this.myPet.toString();
+    }
+
+
+    public void doPetShopping(PetShopServices service) {
+        System.out.printf("The %s %s has used a pet shop service: %s \n", this.myPet.getClass().getSimpleName(),
+                this.myPet.getName(), service.name());
     }
 
 
