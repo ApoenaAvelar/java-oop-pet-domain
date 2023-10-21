@@ -5,12 +5,12 @@ public class Dog extends PetBase{
         super(name, weigh, registerId);
     }
 
-    public Dog(String name, String weigh, String registerId, String race) {
-        super(name, weigh, registerId, race);
+    public Dog(String name, String weigh, String registerId, String breed) {
+        super(name, weigh, registerId, breed);
     }
 
     public void speak(){
-        System.out.printf("The dog %s barked", this.getName());
+        System.out.printf("The dog %s barked \n", this.getName());
     }
 
 

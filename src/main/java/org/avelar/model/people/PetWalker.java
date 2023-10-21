@@ -17,8 +17,9 @@ public class PetWalker extends People{
     }
 
     public void getPetList(){
+        System.out.println("List os pets:" );
         for (PetBase petBase : petBaseList) {
-            System.out.printf("%s: %s", petBase.getClass().getName(), petBase.getName());
+            System.out.printf("%s: %s \n", petBase.getClass().getSimpleName(), petBase.getName());
         }
 
     }

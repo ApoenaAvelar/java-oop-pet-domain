@@ -21,7 +21,7 @@ public class PetBase implements Pet{
         this.weigh = weigh;
         this.registerId = registerId;
         this.breed = breed;
-        this.petKind  = this.getClass().getName();
+        this.petKind  = this.getClass().getSimpleName();
     }
 
     @Override
@@ -39,11 +39,7 @@ public class PetBase implements Pet{
 
     }
 
-    @Override
-    public void doPetShopping(PetShopServices service) {
-        System.out.printf("The %S %s has used a pet shop service: %s", this.getClass().getName(),
-                this.getName(), service.name());
-    }
+
 
     public String getName() {
         return name;
