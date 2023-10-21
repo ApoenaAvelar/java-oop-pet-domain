@@ -39,6 +39,7 @@ public class People {
 
     public void interact(PetBase pet) {
         String petKind = pet.getClass().getName();
+        //FIXME concertar essa lógica, deve avaliar o tipo de pessoa e não o tipo de pet
         switch (petKind) {
             case "People":
                 System.out.printf("A person is petting someone else's %s ", petKind);

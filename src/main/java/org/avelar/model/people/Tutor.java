@@ -13,8 +13,9 @@ public class Tutor extends People{
 
     }
 
-    public void getPetInfo(){
-        System.out.printf("%S");
+
+    public String getPetInfo(){
+        return this.myPet.toString();
     }
 
 

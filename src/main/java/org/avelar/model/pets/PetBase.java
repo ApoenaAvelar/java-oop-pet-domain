@@ -2,24 +2,26 @@ package org.avelar.model.pets;
 
 public class PetBase implements Pet{
 
-    private String petkind = this.getClass().getName();
+    private final String petKind;
     private String name;
     private String weigh;
     private String registerId;
-    private String race = "mixed-breed";
+    private String breed = "mixed-breed";
 
     public PetBase(String name, String weigh, String registerId) {
         this.name = name;
         this.weigh = weigh;
         this.registerId = registerId;
+        this.petKind  = this.getClass().getSimpleName();
     }
 
     // constructor used when the Pet is a mixed-bree
-    public PetBase(String name, String weigh, String registerId, String race) {
+    public PetBase(String name, String weigh, String registerId, String breed) {
         this.name = name;
         this.weigh = weigh;
         this.registerId = registerId;
-        this.race = race;
+        this.breed = breed;
+        this.petKind  = this.getClass().getName();
     }
 
     @Override
@@ -68,20 +70,20 @@ public class PetBase implements Pet{
     }
 
     public String getRace() {
-        return race;
+        return breed;
     }
 
     public void setRace(String race) {
-        this.race = race;
+        this.breed = race;
     }
 
     @Override
     public String toString() {
-        return petkind +
+        return petKind + " " +
                 "name='" + name + '\'' +
                 ", weigh='" + weigh + '\'' +
                 ", registerId='" + registerId + '\'' +
-                ", race='" + race + '\'' +
+                ", race='" + breed + '\'' +
                 '}';
     }
 
