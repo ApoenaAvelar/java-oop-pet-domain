@@ -9,10 +9,7 @@ import static org.avelar.model.people.GenderEnum.MAN;
 import static org.avelar.model.people.GenderEnum.WOMAN;
 import static org.avelar.model.petShop.PetShopServices.SALON;
 
-/**
- * Hello world!
- *
- */
+
 public class App 
 {
     private static final Dog firstPet = new Dog("Brutus","10kg","BA875");
